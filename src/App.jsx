@@ -56,7 +56,7 @@ const App = () => {
 
   const updateBook = async (book) => {
     try {
-      const response = await fetch(`https://booklibrary-backend-j3ou.onrender.com/${book.id}`, {
+      const response = await fetch(`https://booklibrary-backend-j3ou.onrender.com/api/books/${book.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -190,7 +190,6 @@ const App = () => {
     }
   }, []);
 
-  
   const handleLogout = () => {
     localStorage.removeItem("token");
     setToken(null);
@@ -208,8 +207,8 @@ const App = () => {
       localStorage.removeItem("token");
     };
   }, []);
- 
   
+
   return (
     <div className="App">
       <h1 id="booklibrary-heading">BookLibrary</h1>
