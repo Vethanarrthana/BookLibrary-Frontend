@@ -1,0 +1,192 @@
+/* General Styling */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('/BookLibrary-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  overflow: hidden;
+}
+
+/* App Component */
+.App {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: auto;
+  max-height: 90vh; 
+}
+
+/* Navbar Component */
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+nav button {
+  margin: 0 15px;
+  padding: 12px 25px;
+  background: linear-gradient(to right, #ffc36e, #1edf5eb4);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+nav button:hover {
+  background: linear-gradient(to right, #1edf5eb4, #ffc36e);
+}
+
+/* BookLibrary Heading */
+#booklibrary-heading {
+  color: black; 
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* SearchBar Component */
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #ff6e7f;
+  outline: none;
+}
+
+/* BookList Component */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  padding: 15px 20px;
+  margin-bottom: 15px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+
+li:hover {
+  background: #f1f1f1;
+}
+
+li span {
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+li span:hover {
+  color: #ff6e7f;
+}
+
+li .buttons {
+  display: flex;
+  gap: 10px; 
+}
+
+li button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #ff6e7f;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+li button:hover {
+  background-color: #e55c66;
+}
+
+/* AddBook Component */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form h3 {
+  color: black; 
+}
+
+form label {
+  color: black; 
+}
+
+form input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s;
+}
+
+form input:focus {
+  border-color: #ff6e7f;
+  outline: none;
+}
+
+form button {
+  padding: 12px;
+  background: linear-gradient(to right, #fb53c6, #011925);
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: linear-gradient(to right, #021b29, #ff6ee7);
+}
+
+/* BookDetails Component */
+.book-details {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #222; 
+}
+
+.book-details h2 {
+  margin-top: 0;
+  color: #ff6e7f;
+}
+
+.book-details p {
+  color: #111; 
+}
+
+.no-books, .select-book-info {
+  color: black; 
+}
